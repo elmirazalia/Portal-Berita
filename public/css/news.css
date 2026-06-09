@@ -1,0 +1,290 @@
+/* RESET */
+body {
+    font-family: Arial;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ================= HEADER ================= */
+.header {
+    background: white;
+    color: black;
+    padding: 15px 30px;
+    border-bottom: 2px solid #2563eb;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    font-size: 28px;
+    border: 2px solid #2563eb;
+    padding: 8px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #111;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* AUTH BUTTON */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login {
+    background: #2563eb;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-register {
+    background: white;
+    color: #1e40af;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #2563eb;
+}
+
+/* ================= CHANNEL ================= */
+.channel {
+    background: #e5e7eb;
+    padding: 15px 30px;
+    border-bottom: 2px solid #2563eb;
+}
+
+.channel a {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background: #6b7280;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.channel a.active {
+    background: #2563eb;
+}
+
+/* ================= BREAKING ================= */
+.breaking-wrapper {
+    display: flex;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+/* HITAM */
+.breaking-label {
+    background: #111;
+    color: white;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
+/* MERAH */
+.breaking-news {
+    flex: 1;
+    background: #dc2626;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 45px;
+}
+
+/* TEXT */
+.ticker {
+    white-space: nowrap;
+    animation: scroll 25s linear infinite;
+}
+
+.ticker span {
+    margin-right: 50px;
+    color: white;
+}
+
+/* ANIMATION */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ================= HERO ================= */
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.main {
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+.tag {
+    background: #2563eb;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+/* SIDE */
+.side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-item {
+    position: relative;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.side-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+/* ================= GRID ================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 10px;
+}
+
+/* ================= PAGINATION ================= */
+.top-pagination {
+    background: linear-gradient(90deg, #2563eb, #1e3a8a);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.page-btn {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid rgba(255,255,255,0.3);
+}
+
+.page-btn.active {
+    background: white;
+    color: #1e3a8a;
+}
+
+.page-btn:hover {
+    background: white;
+    color: #1e3a8a;
+}
+
+.summary {
+    font-size: 13px;
+    color: #555;
+    padding: 0 10px 10px;
+    line-height: 1.4;
+}
+
+.auth-buttons{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.welcome-user{
+    font-size:14px;
+    color:#333;
+}
+
+.btn-dashboard,
+.btn-write{
+    text-decoration:none;
+    padding:8px 12px;
+    background:#2c3e50;
+    color:white;
+    border-radius:5px;
+}
+
+.btn-dashboard:hover,
+.btn-write:hover{
+    opacity:.9;
+}
